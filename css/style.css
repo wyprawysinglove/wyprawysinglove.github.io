@@ -1,0 +1,452 @@
+
+html{
+    height: 100%;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+    color: #000;
+	min-width: 320px;
+    height: 100%;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+section{
+	padding: 30px 0;
+}
+
+h1{
+	font-size: 70px;
+	font-weight: 500;
+}
+h2{
+	font-size: 50px;
+	font-weight: 500;
+}
+h3{
+	font-size: 25px;
+}
+h4{
+	font-size: 20px;
+}
+h5{
+	font-size: 18px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+/*    position: relative;*/
+   
+}
+/*============== top menu ==============*/
+ .top-menu{
+    background-color: cadetblue;
+    background-color: rgba(95,158,160,.7);
+    position: absolute;
+    min-height: 80px;
+     width: 100%;
+     z-index: 10;
+}
+ .top-menu .navbar-nav .nav-item a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0;
+    text-shadow: 0 0 5px #000;
+}
+ .top-menu .navbar-nav .nav-item:hover a{
+    text-shadow: 0 0 0 #000;
+     color: #fff;
+}
+ .top-menu .navbar-nav .nav-item a::after{
+    content:"";
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+	transition: all .3s;
+}
+ .top-menu .navbar-nav .nav-item:hover a::after{
+    transform: scale(1);
+}
+ .top-menu .navbar-nav .nav-item span{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+}
+ .top-menu img.navbar-brand{
+    width: 150px;
+     height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+     background-color: rgba(255,255,255,.8);
+}
+
+ .top-menu nav ul{
+    padding-left: 150px;
+    width: 100%;
+    line-height: 45px;
+}
+/*============== header ==============*/
+header{
+/*    height: 100%;*/
+    position: relative;
+}
+.img-header{
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 660px;
+    height: 100vh;
+}
+.salute{
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+.salute div{
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.salute h2{
+   text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: .2em;
+}
+/*============== wyciecki ==============*/
+.my-bg{
+    background-image: url(../img/background.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -20;
+    top: 0;
+}
+.wyciecki {
+    
+}
+.wyciecki .describe div{
+    height: 142px;
+    overflow: hidden;
+}
+.wyciecki .row{
+    padding: 20px;
+    border: 3px solid rgb(66, 153, 92);
+    border-radius: 20px;
+    background-color: #fff;
+}
+.wyciecki .describe h3{
+    color: #f00;
+}
+.wyciecki h4{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #000;
+    margin-bottom: 0px;
+    padding: 10px 0 30px;
+    border-radius: 20px 20px 0 0;
+    border: 3px solid rgb(66, 153, 92);
+    border-bottom: none;
+    background-color: rgba(66, 153, 92, .7);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -20px;
+}
+.wyciecki .card{
+    margin-top: 40px;
+    background: transparent;
+}
+.wyciecki .btn{
+    text-shadow: 1px 1px 3px #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: rgb(71, 177, 161);
+    letter-spacing: .1em;
+}
+.wyciecki .describe i{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(71, 177, 161);
+    border-radius: 50%;
+    border:3px solid rgb(71, 177, 161);
+}
+.wyciecki .slider{
+/*    height: 300px;*/
+}
+.wyciecki .slider img{
+    max-height: 300px;
+}
+/*============== Galeria ==============*/
+.galeria{
+    margin-top: 50px;
+/*    background-color: rgba(255,255,255,1);*/
+    background-image: url(../img/images.jpg);
+}
+.galeria .nav-link{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.galeria .nav-link:hover{
+    text-shadow: 1px 0 1px #fff;
+    background-color: rgba(0,0,0,.1);
+}
+.galeria .nav-link.active{
+    color: rgb(35, 97, 87);
+    background-color: rgba(0,0,0,.2);
+}
+.galeria-header{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.gallery-item a{ 
+    display: block;
+    margin-bottom: 20px;
+    padding: 3px;
+    border: 3px solid rgb(66, 153, 92);
+    border-radius: 10px;
+}
+.gallery-item img{
+    width: 100%;
+}
+.galeria .left-menu{ 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border: 3px solid rgb(66, 153, 92);
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+/*============== Regulamin ==============*/
+.regulamin .container{
+    border: 3px solid rgb(66, 153, 92);
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.9);
+    
+}
+.regulamin h2{
+    text-align: center;
+     margin-top: 15px;
+    text-transform: uppercase;
+}
+.regulamin p{
+    font-size: 18px;
+}
+.regulamin p span{
+    font-weight: bold;
+}
+/*============== contact ==============*/
+.contact {
+}
+.contact .head-contact{
+    color: #fff;
+}
+.contact .head-contact h2{
+   text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.contact .head-contact p{
+   font-size: 18px;
+    margin: 30px 0 70px;
+}
+.contact .container{
+    background: #15263e;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+}
+.contact .name{
+    margin-bottom: 20px;
+}
+.contact .phone{
+}
+.contact .email{
+}
+.contact .message{
+}
+.contact .but-contact{
+    color: #fff;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+    background: rgb(66, 153, 92);
+    transition: all .2s;
+}
+.contact .but-contact:hover{
+    box-shadow: 0 1px 3px #0f0;
+    color: #ddd;
+}
+ .contact textarea {
+  resize: none;
+}
+
+#my-form  span.form-control-feedback {
+    font-size: 18px;
+    right: 15px;
+    line-height: 44px;
+}
+/*============== footer ==============*/
+footer{
+    padding: 70px 0;
+}
+/*============== social ==============*/
+.social{
+    width: 70px;
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    z-index: 25;
+    transition: all .5s;
+}
+.social.social-top{
+    top: 0px;
+    padding-top: 10px;
+    transition: all .5s;
+}
+.social a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.social #facebook{
+    background: rgba(24,119,242, .9);
+}
+.social #facebook:hover{
+    background: rgb(24,119,242);
+}
+.social #linkedin{
+    background: rgba(22,102,197, .9);
+}
+.social #instagram{
+    background: rgba(225,48,108, .9);
+}
+.social #linkedin:hover{
+    background: rgb(22,102,197);
+}
+.social #instagram:hover{
+    background: rgb(225,48,108);
+}
+.social i{
+    color: #fff;
+    margin-left: 18px;
+}
+/*==============  ==============*/
+/*============== button Up ==============*/
+.scrollToTop1{
+	height: 70px;
+	width: 70px;
+	background: rgba(227,32,96,.7);
+	/*background: #dd1f5d;*/
+	color: #fff;
+	font-size: 30px;
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+	z-index: 100;
+	transition:all .3s;
+	border:none;
+	display: none;
+    border-radius: 5px;
+}
+.scrollToTop1 i{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+}
+.scrollToTop1:hover{
+	background: #dd1f5d;
+	color: #fff;
+}
+/*==============  ==============*/
+
+
+/*Large Device, Wide Screens*/
+@media only screen and (max-width: 1400px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+     .wyciecki .slider img{
+    max-height: 250px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .wyciecki .describe div{
+    height: 100px;
+    overflow: hidden;
+    }
+    .wyciecki .slider img{
+    max-height: 400px;
+    }
+	
+}
+/*Small Device, Wide Screens*/
+@media only screen and (max-width: 768px) {
+    .top-menu .navbar-nav .nav-item a{
+       display: inline-block;
+    }
+    .top-menu .navbar-nav .nav-item span{
+        display: none;
+    }
+     .top-menu nav ul{
+        padding-left: 10px;
+        padding-top: 115px;
+        line-height: 45px;
+    }
+     .top-menu{
+        padding-top: 14px;
+        transition: all 1s;
+    }
+    .navbar-dark .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+    .contact .name{
+        margin-bottom: 0;
+    }
+    .contact input{
+        margin-bottom: 20px;
+    }
+    
+
+}
+/*Extra small Device, Wide Screens*/
+@media only screen and (max-width : 480px){
+     
+
+}
+@media only screen and (min-width : 1400px){
+  
+
+}
+@media only screen and (min-width : 480px){
+
+
+}
+
